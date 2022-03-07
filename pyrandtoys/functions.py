@@ -134,7 +134,7 @@ def combi(list: list = []) -> Tuple[str, ...]:
     """
     res = ()
     
-    if isinstance(list, list):
+    if isinstance(list, str):
         temp = []
         temp.append(list)
         list = temp
