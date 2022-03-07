@@ -1,0 +1,9 @@
+LICENSE.md
+README.rst
+setup.py
+pyrandtoys/__init__.py
+pyrandtoys/functions.py
+pyrandtoys.egg-info/PKG-INFO
+pyrandtoys.egg-info/SOURCES.txt
+pyrandtoys.egg-info/dependency_links.txt
+pyrandtoys.egg-info/top_level.txt
