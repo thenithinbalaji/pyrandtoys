@@ -67,10 +67,10 @@ Spinner:
 Toy Combinations:
 ^^^^^^^^^^^^^^^^^
 
-+ **Return Type:** ``<tuple>`` 
 + **Default:** Number of Toys = 0
++ **Return Type:** ``<tuple>`` 
 
-+ **If you want to use a combination of toys then,** 
+**If you want to use a combination of toys then,**
    **Required:** List of toys as ``<list>``,\ ``<tuple>``
 
 ::
