@@ -4,14 +4,14 @@ from typing import Tuple
 
 def dice(count: int = 1) -> Tuple[int, ...]:
     """
-    Rolls N dices and returns the values as a tuple
+    Rolls N dice
 
     Parameters:
-    count (int) : The number of dices to roll
+    count (int) : The number of dice to roll, default = 1
 
     Returns:
     tuple: The values of dice rolls
-    The tuple values is a number between 1 and 6
+    Each tuple element is a number between 1 and 6
    """
 
     res = ()
@@ -24,14 +24,14 @@ def dice(count: int = 1) -> Tuple[int, ...]:
 
 def coin(count: int = 1) -> Tuple[str, ...]:
     """
-    Rolls N coins and returns the values as a tuple
+    Rolls N coins
 
     Parameters:
-    count (int) : The number of coins to roll
+    count (int) : The number of coins to roll, default = 1
 
     Returns:
     tuple: The values of coin rolls
-    tuple can be HEADS or TAILS
+    A tuple element can be either HEADS or TAILS
    """
 
     res = ()
@@ -45,14 +45,14 @@ def coin(count: int = 1) -> Tuple[str, ...]:
 
 def dreidel(count: int = 1) -> Tuple[str, ...]:
     """
-    Spin a dreidel N times and return the values as a tuple
+    Spin a dreidel N times
 
     Parameters:
-    count (int) : The number times to spin
+    count (int) : The number times to spin, default = 1
 
     Returns:
     tuple: The values of dreidel spins
-    Tuple contains one of the values between ["NUN", "GIMEL", "HE", "SHIN"]
+    A tuple element is one of these values: NUN, GIMEL, HE, SHIN
    """
 
     res = ()
@@ -66,14 +66,14 @@ def dreidel(count: int = 1) -> Tuple[str, ...]:
 
 def cat(count: int = 1) -> Tuple[str, ...]:
     """
-    Ask if the cat is alive or dead
+    Perform Schrödinger's cat experiment N times
 
     Parameters:
-    count (int) : The number of times to ask
+    count (int) : The number of times to perform the experiment, default = 1
 
     Returns:
-    tuple: The dead or alive values of the cats
-    Cat can be ALIVE or DEAD
+    tuple: The status of cats
+    A Cat can be ALIVE or DEAD
    """
     res = ()
     sample_space = ["ALIVE", "DEAD"]
@@ -86,14 +86,14 @@ def cat(count: int = 1) -> Tuple[str, ...]:
 
 def switch(count: int = 1) -> Tuple[str, ...]:
     """
-    Flip a switch N times and return the values as a tuple
+    Flip a switch N times
 
     Parameters:
-    count (int) : The number times to spin
+    count (int) : The number times to flip a switch, default = 1
 
     Returns:
-    tuple: The values of dreidel spins
-    Switch can be ON or OFF
+    tuple: The status of switches
+    A Switch can be either ON or OFF
    """
     res = ()
     sample_space = ["ON", "OFF"]
@@ -106,14 +106,14 @@ def switch(count: int = 1) -> Tuple[str, ...]:
 
 def spinner(lower: int, upper: int = 0) -> int:
     """
-    Spin a spinner between a lower and upper value
+    Spin a spinner with numbers from lower to upper value
 
     Parameters:
-    lower (int) : The lower value of the spinner
-    upper (int) : The upper value of the spinner
+    lower (int) : lowest number on the spinner
+    upper (int) : highest number on the spinner
 
     Returns:
-    int: The value of the spinner
+    int: The value at which the spinner has stopped spinning
     int is a number between lower and upper
     """
     if lower > upper:

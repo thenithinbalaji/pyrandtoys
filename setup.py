@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 DESCRIPTION = "Python Module for generating the result of probability based toys."
 LONG_DESC = open("README.rst").read()
 
@@ -14,7 +14,7 @@ setup(
     long_description=LONG_DESC,
     packages=find_packages(),
     install_requires=[],
-    keywords=["python", "random", "probability"],
+    keywords=["python", "random", "probability", "experiment"],
     classifiers=[
         "Intended Audience :: Education",
         "Intended Audience :: Developers",
