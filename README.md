@@ -1,20 +1,24 @@
-# Rand Toys
+<h1 align = "center">Rand Toys</h1></center>
 
-`pyrandtoys` is a python module containing probability-based toys' functions. It works offline and is compatible with both Python 2 and 3. 
+<p align = "center">
+<code> pyrandtoys</code> is a python module containing probability-based toys' functions. <br> It works offline and is compatible with both Python 2 and 3. 
+</p>
 
-### Installation
+### 🔮 Installation
 
 ``` 
 pip install pyrandtoys
 ```
 
-### Usage
+### 🖥️ Usage
 
 ```
 import pyrandtoys
+print(pyrandtoys.coin()) #there are many other toys in pyrandtoys similar to coin, check below
 ```
+## List of functions available in pyrandtoys module
 
-#### Dice:
+### 🎲 Dice
 
 **Optional:** Number of Dice `<int>`   
 **Default:** Number of Dice = 1   
@@ -23,7 +27,7 @@ import pyrandtoys
 dice(number_of_dice)
 ```
 
-#### Coin:
+### 🏆 Coin
 
 **Optional:** Number of Coins `<int>`    
 **Default:** Number of Coins = 1    
@@ -32,7 +36,7 @@ dice(number_of_dice)
 coin(number_of_coins)
 ```
 
-#### Similar Toys:
+### 🧮 Similar Toys
 
 **Optional:** Number of Items `<int>`    
 **Default:** Number of Items = 1    
@@ -43,7 +47,7 @@ cat(number_of_cats)
 switch(number_of_switches)
 ```
 
-#### Spinner:
+### ⚖️ Spinner
 
 **Required:** Lower & Upper Limits `<int>`    
 **Default:** Lower Limit = 0    
@@ -52,7 +56,7 @@ switch(number_of_switches)
 spinner(lowerLimit, upperLimit) 
 ```
 
-#### Toy Combinations:
+### 🥂 Toy Combinations
 **Return Type:** `<tuple>`      
 **Default:** Number of Toys = 0     
 <br>
@@ -69,7 +73,7 @@ combi(["dreidel", "coin", "coin", "cat"])
 combi(x)
 ```
 
-### Project Links
+### 📚 Project Links
 
 + PyPI [(https://pypi.org/project/pyrandtoys/)](https://pypi.org/project/pyrandtoys/)
 + GitHub [(https://github.com/thenithinbalaji/pyrandtoys)](https://github.com/thenithinbalaji/pyrandtoys)
