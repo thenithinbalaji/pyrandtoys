@@ -122,6 +122,30 @@ def spinner(lower: int, upper: int = 0) -> int:
     return rop.randint(int(lower), int(upper))
 
 
+def card(count: int = 1) -> Tuple[str, ...]:
+    """
+    Picks N cards from a deck of 52 cards
+
+    Parameters:
+    count (int) : The number of cards to pick, default = 1
+
+    Returns:
+    tuple: The cards that have been picked
+    Each tuple element is a card from a deck of 52 cards.
+   """
+
+    SUITS = ("Spades", "Clubs", "Hearts", "Diamonds")
+    RANKS = ("Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King")
+
+    sample_space = [rank + " of " + suit for rank in RANKS for suit in SUITS]
+
+    res = ()
+    for _ in range(int(count)):
+        res += (rop.choice(sample_space),)
+
+    return res
+
+
 def combi(list: list = []) -> Tuple[str, ...]:
     """
     Randomise combinations between other functions
