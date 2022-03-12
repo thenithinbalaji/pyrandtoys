@@ -24,7 +24,7 @@ def dice(count: int = 1) -> Tuple[int, ...]:
 
 def coin(count: int = 1) -> Tuple[str, ...]:
     """
-    Rolls N coins
+    Flips N coins
 
     Parameters:
     count (int) : The number of coins to roll, default = 1
@@ -86,7 +86,7 @@ def cat(count: int = 1) -> Tuple[str, ...]:
 
 def switch(count: int = 1) -> Tuple[str, ...]:
     """
-    Flip a switch N times
+    Toggles a switch N times
 
     Parameters:
     count (int) : The number times to flip a switch, default = 1
