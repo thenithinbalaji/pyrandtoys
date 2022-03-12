@@ -190,6 +190,9 @@ def combi(list: list = []) -> Tuple[str, ...]:
 
         elif obj == "switch":
             res += switch()
+        
+        elif obj == "card":
+            res += card()
 
         else:
             res += (None,)
