@@ -27,10 +27,10 @@ def coin(count: int = 1) -> Tuple[str, ...]:
     Flips N coins
 
     Parameters:
-    count (int) : The number of coins to roll, default = 1
+    count (int) : The number of coins to flip, default = 1
 
     Returns:
-    tuple: The values of coin rolls
+    tuple: The values of coin flips
     A tuple element can be either HEADS or TAILS
    """
 
@@ -86,10 +86,10 @@ def cat(count: int = 1) -> Tuple[str, ...]:
 
 def switch(count: int = 1) -> Tuple[str, ...]:
     """
-    Toggles a switch N times
+    Toggle a switch N times
 
     Parameters:
-    count (int) : The number times to flip a switch, default = 1
+    count (int) : The number times to toggle a switch, default = 1
 
     Returns:
     tuple: The status of switches
