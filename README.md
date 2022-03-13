@@ -2,20 +2,32 @@
 
 <p align = "center">
 
+  <a href = "https://github.com/thenithinbalaji/pyrandtoys/releases">
 <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/thenithinbalaji/pyrandtoys?color=blueviolet">
+  </a>
 
+  <a href = "https://github.com/thenithinbalaji/pyrandtoys/releases">
 <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/thenithinbalaji/pyrandtoys?color=blue">
+  </a>
 
+  <a href = "https://github.com/thenithinbalaji/pyrandtoys">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/thenithinbalaji/pyrandtoys?color=red">
-
+  </a>
+  
 <br>
 
+  <a href = "https://github.com/thenithinbalaji/pyrandtoys/graphs/contributors">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/thenithinbalaji/pyrandtoys?color=ff69b4"> 
+  </a>
 
+  <a href = "https://github.com/thenithinbalaji/pyrandtoys/issues?q=is%3Aissue+is%3Aclosed">
 <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/thenithinbalaji/pyrandtoys?color=success">
+  </a>
 
+  <a href = "https://github.com/thenithinbalaji/pyrandtoys/blob/main/LICENSE.md">
 <img alt="License" src="https://img.shields.io/github/license/thenithinbalaji/pyrandtoys"> 
-
+  </a>
+  
 <br>
 <code> pyrandtoys</code> is a python module containing probability-based toys' functions. <br> It works offline and is compatible with both Python 2 and 3. 
 
