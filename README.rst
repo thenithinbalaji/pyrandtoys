@@ -40,6 +40,17 @@ Coin:
 
    coin(number_of_coins)
 
+Card:
+^^^^^
+
++ **Optional:** Number of Cards ``<int>`` 
++ **Default:** Number of Cards = 1
++ **Return Type:** ``<tuple>``
+
+::
+
+   card(number_of_cards)
+
 Similar Toys:
 ^^^^^^^^^^^^^
 

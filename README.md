@@ -1,7 +1,24 @@
 <h1 align = "center">Rand Toys</h1></center>
 
 <p align = "center">
+
+<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/thenithinbalaji/pyrandtoys?color=blueviolet">
+
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/thenithinbalaji/pyrandtoys?color=blue">
+
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/thenithinbalaji/pyrandtoys?color=red">
+
+<br>
+
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/thenithinbalaji/pyrandtoys?color=ff69b4"> 
+
+<img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/thenithinbalaji/pyrandtoys?color=success">
+
+<img alt="License" src="https://img.shields.io/github/license/thenithinbalaji/pyrandtoys"> 
+
+<br>
 <code> pyrandtoys</code> is a python module containing probability-based toys' functions. <br> It works offline and is compatible with both Python 2 and 3. 
+
 </p>
 
 ### 🔮 Installation
@@ -34,6 +51,14 @@ dice(number_of_dice)
 **Return Type:** `<tuple>`    
 ```
 coin(number_of_coins)
+```
+
+### 🃏 Card
+**Optional:** Number of Cards `<int>`    
+**Default:** Number of Cards = 1    
+**Return Type:** `<tuple>`    
+```
+card(number_of_cards)
 ```
 
 ### 🧮 Similar Toys

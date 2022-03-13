@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = "0.0.2"
+VERSION = "0.1.0"
 DESCRIPTION = "Python Module for generating the result of probability based toys."
 LONG_DESC = open("README.rst").read()
 
