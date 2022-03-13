@@ -24,13 +24,13 @@ def dice(count: int = 1) -> Tuple[int, ...]:
 
 def coin(count: int = 1) -> Tuple[str, ...]:
     """
-    Rolls N coins
+    Flips N coins
 
     Parameters:
-    count (int) : The number of coins to roll, default = 1
+    count (int) : The number of coins to flip, default = 1
 
     Returns:
-    tuple: The values of coin rolls
+    tuple: The values of coin flips
     A tuple element can be either HEADS or TAILS
    """
 
@@ -86,10 +86,10 @@ def cat(count: int = 1) -> Tuple[str, ...]:
 
 def switch(count: int = 1) -> Tuple[str, ...]:
     """
-    Flip a switch N times
+    Toggle a switch N times
 
     Parameters:
-    count (int) : The number times to flip a switch, default = 1
+    count (int) : The number times to toggle a switch, default = 1
 
     Returns:
     tuple: The status of switches
@@ -120,6 +120,30 @@ def spinner(lower: int, upper: int = 0) -> int:
         lower, upper = upper, lower
 
     return rop.randint(int(lower), int(upper))
+
+
+def card(count: int = 1) -> Tuple[str, ...]:
+    """
+    Picks N cards from a deck of 52 cards
+
+    Parameters:
+    count (int) : The number of cards to pick, default = 1
+
+    Returns:
+    tuple: The cards that have been picked
+    Each tuple element is a card from a deck of 52 cards.
+   """
+
+    SUITS = ("Spades", "Clubs", "Hearts", "Diamonds")
+    RANKS = ("Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King")
+
+    sample_space = [rank + " of " + suit for rank in RANKS for suit in SUITS]
+
+    res = ()
+    for _ in range(int(count)):
+        res += (rop.choice(sample_space),)
+
+    return res
 
 
 def combi(list: list = []) -> Tuple[str, ...]:
@@ -166,6 +190,9 @@ def combi(list: list = []) -> Tuple[str, ...]:
 
         elif obj == "switch":
             res += switch()
+        
+        elif obj == "card":
+            res += card()
 
         else:
             res += (None,)
