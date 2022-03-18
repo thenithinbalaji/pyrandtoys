@@ -10,8 +10,8 @@ def dice(count: int = 1) -> Tuple[int, ...]:
     count (int) : The number of dice to roll, default = 1
 
     Returns:
-    tuple: The values of dice rolls
-    Each tuple element is a number between 1 and 6
+    tuple: The result of dice rolls.
+    Each tuple element is a number between 1 and 6.
     """
 
     res = ()
@@ -24,14 +24,14 @@ def dice(count: int = 1) -> Tuple[int, ...]:
 
 def coin(count: int = 1) -> Tuple[str, ...]:
     """
-    Flips N coins
+    Toss N coins
 
     Parameters:
-    count (int) : The number of coins to flip, default = 1
+    count (int) : The number of coins to toss, default = 1
 
     Returns:
-    tuple: The values of coin flips
-    A tuple element can be either HEADS or TAILS
+    tuple: The result of coin toss.
+    A tuple element can be either HEADS or TAILS.
     """
 
     res = ()
@@ -51,8 +51,8 @@ def dreidel(count: int = 1) -> Tuple[str, ...]:
     count (int) : The number times to spin, default = 1
 
     Returns:
-    tuple: The values of dreidel spins
-    A tuple element is one of these values: NUN, GIMEL, HE, SHIN
+    tuple: The values of dreidel spins.
+    Each tuple element is one of these values: NUN, GIMEL, HE, SHIN.
     """
 
     res = ()
@@ -72,8 +72,8 @@ def cat(count: int = 1) -> Tuple[str, ...]:
     count (int) : The number of times to perform the experiment, default = 1
 
     Returns:
-    tuple: The status of cats
-    A Cat can be ALIVE or DEAD
+    tuple: The status of cats.
+    A cat can be either ALIVE or DEAD.
     """
     res = ()
     sample_space = ["ALIVE", "DEAD"]
@@ -92,8 +92,8 @@ def switch(count: int = 1) -> Tuple[str, ...]:
     count (int) : The number times to toggle a switch, default = 1
 
     Returns:
-    tuple: The status of switches
-    A Switch can be either ON or OFF
+    tuple: The state of switches.
+    A switch can be either ON or OFF.
     """
     res = ()
     sample_space = ["ON", "OFF"]
@@ -109,12 +109,13 @@ def spinner(lower: int, upper: int = 0) -> int:
     Spin a spinner with numbers from lower to upper value
 
     Parameters:
-    lower (int) : lowest number on the spinner
-    upper (int) : highest number on the spinner
+    lower (int) : lowest number on the spinner.
+    upper (int) : highest number on the spinner.
 
     Returns:
-    int: The value at which the spinner has stopped spinning
-    int is a number between lower and upper
+    int: The value at which the spinner has stopped spinning.
+    
+    Result is a number between lower and upper.
     """
     if lower > upper:
         lower, upper = upper, lower
@@ -130,7 +131,7 @@ def card(count: int = 1) -> Tuple[str, ...]:
     count (int) : The number of cards to pick, default = 1
 
     Returns:
-    tuple: The cards that have been picked
+    tuple: The cards that have been picked.
     Each tuple element is a card from a deck of 52 cards.
     """
 

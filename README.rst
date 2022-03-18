@@ -1,4 +1,4 @@
-Rand Toys
+PyRandToys
 =========
 
 ``pyrandtoys`` is a python module containing probability-based toys
