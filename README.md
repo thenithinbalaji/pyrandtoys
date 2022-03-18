@@ -1,4 +1,4 @@
-<h1 align = "center">Rand Toys</h1></center>
+<h1 align = "center">PyRandToys</h1></center>
 
 <p align = "center">
 
