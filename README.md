@@ -88,7 +88,7 @@ switch(number_of_switches)
 
 **Required:** Lower & Upper Limits `<int>`    
 **Default:** Lower Limit = 0    
-**Return Type:** `<tuple>`    
+**Return Type:** `<int>`    
 ```
 spinner(lowerLimit, upperLimit) 
 ```
@@ -98,8 +98,9 @@ spinner(lowerLimit, upperLimit)
 **Default:** Number of Toys = 0     
 <br>
 **If you want to use a combination of toys then,**        
-**Required:** List of toys as `<list>`,`<tuple>`        
+**Required:** names of toys as ``<tuple>, <list>, <str>``      
 ```
+combi("coin", "switch")
 combi(("switch", "cat", "dice"))
 combi(["dreidel", "coin", "coin", "cat"])
 ```

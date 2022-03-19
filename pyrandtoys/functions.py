@@ -1,5 +1,6 @@
 import random as rop
 from typing import Tuple
+from typing import Union
 
 
 def dice(count: int = 1) -> Tuple[int, ...]:
@@ -114,7 +115,7 @@ def spinner(lower: int, upper: int = 0) -> int:
 
     Returns:
     int: The value at which the spinner has stopped spinning.
-    
+
     Result is a number between lower and upper.
     """
     if lower > upper:
@@ -161,53 +162,73 @@ def card(count: int = 1) -> Tuple[str, ...]:
     return res
 
 
-def combi(list: list = []) -> Tuple[str, ...]:
+def combi(*argv: Union[str, int, list, tuple]) -> Tuple[Union[int, str], ...]:
     """
     Randomise combinations between other functions
 
     Parameters:
-    list (list) : The list of functions to randomise
+    Functions to randomise
 
     Returns:
     tuple: The values of the randomised functions
     """
-    res = ()
 
-    if isinstance(list, str):
-        list = [list]
+    res = []
 
-    elif isinstance(list, int):
-        temp = []
-        sample_space = ["coin", "dice", "switch", "card"]
+    for item in argv:
+        if isinstance(item, str):
+            item = item.lower()
+            try:
+                res.append(eval(item + "()")[0])
+            except:
+                res.append(None)
 
-        for _ in range(list):
-            rand_op = rop.choice(sample_space)
-            temp.append(rand_op)
+        elif isinstance(item, list) or isinstance(item, tuple):
+            temp = ()
+            for i in item:
 
-        list = temp
+                if isinstance(i, str):
+                    i = i.lower()
+                    try:
+                        temp += (eval(i + "()")[0],)
+                    except:
+                        temp += (None,)
 
-    for obj in list:
-        obj = obj.lower()
+                elif isinstance(i, int):
+                    sample_space = ["coin", "dice", "switch", "card"]
+                    temp2 = ()
 
-        if obj == "coin":
-            res += coin()
+                    for _ in range(i):
+                        rand_op = rop.choice(sample_space)
+                        try:
+                            temp2 += (eval(rand_op + "()")[0],)
+                        except:
+                            temp2 += (None,)
 
-        elif obj == "dice":
-            res += dice()
+                    temp += (temp2,)
 
-        elif obj == "dreidel":
-            res += dreidel()
+                else:
+                    temp += (None,)
 
-        elif obj == "cat":
-            res += cat()
+            res.append(temp)
 
-        elif obj == "switch":
-            res += switch()
+        elif isinstance(item, int):
 
-        elif obj == "card":
-            res += card()
+            sample_space = ["coin", "dice", "switch", "card"]
+            temp = ()
 
-        else:
-            res += (None,)
+            for _ in range(item):
+                rand_op = rop.choice(sample_space)
+                try:
+                    temp += (eval(rand_op + "()")[0],)
+                except:
+                    temp += (None,)
 
-    return res
+            res.append(temp)
+
+    res = tuple(res)
+
+    if len(res) == 1 and isinstance(res[0], tuple):
+        return res[0]
+    else:
+        return res

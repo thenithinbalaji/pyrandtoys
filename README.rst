@@ -69,7 +69,7 @@ Spinner:
 
 + **Required:** Lower & Upper Limits ``<int>`` 
 + **Default:** Lower Limit = 0 
-+ **Return Type:** ``<tuple>``
++ **Return Type:** ``<int>``
 
 ::
 
@@ -82,10 +82,11 @@ Toy Combinations:
 + **Return Type:** ``<tuple>`` 
 
 **If you want to use a combination of toys then,**
-   **Required:** List of toys as ``<list>``,\ ``<tuple>``
+   **Required:** names of toys as ``<tuple>, <list>, <str>``
 
 ::
 
+   combi("coin", "switch")
    combi(("switch", "cat", "dice"))
    combi(["dreidel", "coin", "coin", "cat"])
 
