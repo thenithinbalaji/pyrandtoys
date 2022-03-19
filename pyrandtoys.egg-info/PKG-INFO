@@ -1,3 +1,23 @@
+Metadata-Version: 2.1
+Name: pyrandtoys
+Version: 1.0.0
+Summary: Python Module for generating the result of probability based toys.
+Home-page: https://github.com/thenithinbalaji/pyrandtoys
+Author: thenithinbalaji
+Author-email: thenithinbalaji@outlook.in
+License: UNKNOWN
+Keywords: python,random,probability,experiment
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.md
+
 PyRandToys
 ==========
 
@@ -103,3 +123,5 @@ Project Links
    `(https://pypi.org/project/pyrandtoys/) <https://pypi.org/project/pyrandtoys/>`__
 -  GitHub
    `(https://github.com/thenithinbalaji/pyrandtoys) <https://github.com/thenithinbalaji/pyrandtoys>`__
+
+
