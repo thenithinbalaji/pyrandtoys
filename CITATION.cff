@@ -1,7 +1,13 @@
-cff-version: 1.2.0
-title: pyrandtoys
-message: Please cite this software using these metadata.
-type: software
+# YAML 1.2
+---
 authors:
-  - given-names: Nithin Balaji
+  -
+    name: "The Nithin Balaji and Team"
     email: thenithinbalaji@outlook.in
+cff-version: "1.2.0"
+date-released: 2022-03-019
+license: MIT
+message: "We acknowledge the importance of good software to support research, and we note that research becomes more valuable when it is communicated effectively. To demonstrate the value of pyrandtoys, we ask that you cite pyrandtoys in your work."
+title: Pyrandtoys
+version: "v1.0.0"
+...
